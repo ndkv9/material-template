@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
 
 				<Footer>
 					© {new Date().getFullYear()}, Built with
-					<a href='https://web.centria.fi/'>Centria</a>
+					<a href='https://web.centria.fi/'> Centria</a>
 				</Footer>
 			</SiteWrapper>
 		</Themed.root>
