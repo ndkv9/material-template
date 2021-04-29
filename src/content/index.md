@@ -1,6 +1,6 @@
 ---
-title: "Learning goals"
-nav_order: 2
+title: 'Learning goals'
+nav_order: 1
 ---
 
 ## Part 0 - Learning goals and grading

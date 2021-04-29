@@ -1,6 +1,7 @@
 /** to choose different highlighting styles from
  *   https://theme-ui.com/packages/prism/
  */
+import oceanic from '@theme-ui/prism/presets/oceanic-next.json'
 import colors from './colors'
 import headings from './headings'
 
@@ -55,6 +56,21 @@ const index = {
 			transition: `color ${transition}`,
 			':hover,:focus': {
 				color: 'text',
+			},
+		},
+		pre: {
+			...oceanic,
+			fontFamily: '"Operator Mono", monospace',
+			fontSize: '0.9rem',
+			tabSize: 4,
+			hyphens: 'none',
+			overflow: 'auto',
+			borderRadius: 6,
+			p: 3,
+			my: 4,
+			'.highlight': {
+				backgroundColor: 'highlight',
+				fontWeight: 'bold',
 			},
 		},
 		inlineCode: {

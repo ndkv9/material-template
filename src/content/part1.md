@@ -1,6 +1,6 @@
 ---
-title: "Part 1 - The beginning"
-nav_order: 3
+title: 'Part 1 - The beginning'
+nav_order: 2
 ---
 
 During this course, you will learn how to do basic programs. The course starts from the very beginning and goes deeper as we progress. Before we start coding, we have to know what coding is, exactly.
@@ -11,7 +11,7 @@ Programming languages offer multiple **methods** and **commands** as **built-in*
 
 Our C# programs require a certain type of body to function:
 
-```cs
+```cpp
 public class Program {
     public static void Main(string[] args)
     {
