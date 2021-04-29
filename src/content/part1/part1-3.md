@@ -19,7 +19,7 @@ Console.WriteLine(sum); // prints 6
 
 You can change the order of calculation with brackets, if you wish.
 
-```swift
+```cpp
 int calcWithBrackets = (1 + 1) + 3 * (2 + 5);
 Console.WriteLine(calcWithBrackets); // prints 23
 
