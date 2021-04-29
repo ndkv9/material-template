@@ -4,14 +4,19 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 import React from 'react'
 import Layout from '../components/Layout'
 import PropTypes from 'prop-types'
+import { MDXProvider } from '@mdx-js/react'
+import { Image, AspectImage, Embed, Message } from 'theme-ui'
 
 const DocsTemplate = ({ data }) => {
 	const { mdx } = data
+	const shortcodes = { Image, AspectImage, Embed, Message }
 
 	return (
 		<Layout>
 			<Heading>{mdx.frontmatter.title}</Heading>
-			<MDXRenderer>{mdx.body}</MDXRenderer>
+			<MDXProvider components={shortcodes}>
+				<MDXRenderer>{mdx.body}</MDXRenderer>
+			</MDXProvider>
 		</Layout>
 	)
 }
