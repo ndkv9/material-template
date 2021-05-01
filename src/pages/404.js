@@ -19,6 +19,7 @@ const NotFoundPage = () => (
 
 const Header = styled.div`
 	font-size: 1.5rem;
+	color: ${p => p.theme.colors.primary};
 `
 
 export default NotFoundPage
