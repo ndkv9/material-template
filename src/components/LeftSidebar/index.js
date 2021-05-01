@@ -2,19 +2,17 @@ import styled from '@emotion/styled'
 import React from 'react'
 import mediaqueries from '../../styles/media'
 import Navigation from './Navigation'
-import Close from '../icons/Close'
 import PropTypes from 'prop-types'
 
 const LeftSidebar = ({ navOpen, setNavOpen }) => {
 	const closeNavbar = () => {
-		setNavOpen(!navOpen)
+		navOpen && setNavOpen(!navOpen)
 	}
 
 	return (
 		<LeftSidebarWrapper>
-			<LeftSidebarNav navOpen={navOpen}>
+			<LeftSidebarNav navOpen={navOpen} onClick={closeNavbar}>
 				<Navigation />
-				{navOpen && <Close onClick={closeNavbar} />}
 			</LeftSidebarNav>
 		</LeftSidebarWrapper>
 	)
