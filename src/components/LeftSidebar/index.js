@@ -2,6 +2,8 @@ import styled from '@emotion/styled'
 import React from 'react'
 import mediaqueries from '../../styles/media'
 import Navigation from './Navigation'
+import Icon from '../icons/Icon'
+import Close from '../icons/Close'
 import PropTypes from 'prop-types'
 
 const LeftSidebar = ({ navOpen, setNavOpen }) => {
@@ -11,8 +13,15 @@ const LeftSidebar = ({ navOpen, setNavOpen }) => {
 
 	return (
 		<LeftSidebarWrapper>
-			<LeftSidebarNav navOpen={navOpen} onClick={closeNavbar}>
+			<LeftSidebarNav navOpen={navOpen}>
 				<Navigation />
+				{navOpen && (
+					<BtnWrapper>
+						<CloseBtn onClick={closeNavbar}>
+							{<Icon icon={<Close />} size={24} />}
+						</CloseBtn>
+					</BtnWrapper>
+				)}
 			</LeftSidebarNav>
 		</LeftSidebarWrapper>
 	)
@@ -43,6 +52,21 @@ const LeftSidebarNav = styled.nav`
     transform: translateX(0);
     padding: 6.6rem 0 1rem;
   `};
+`
+const CloseBtn = styled.button`
+	padding: 0 0.4rem;
+	margin-right: 3rem;
+	height: 37px;
+	background: none;
+	border: 0;
+	color: ${p => p.theme.colors.text};
+	cursor: pointer;
+	font-size: 1rem;
+`
+
+const BtnWrapper = styled.div`
+	display: flex;
+	justify-content: flex-end;
 `
 
 LeftSidebar.propTypes = {
