@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled'
+import PropTypes from 'prop-types'
 
 export const Exercise = ({ children, title }) => {
 	return (
@@ -17,6 +18,15 @@ export const Note = ({ children }) => {
 			{children}
 		</NoteContainer>
 	)
+}
+
+Exercise.propTypes = {
+	children: PropTypes.string.isRequired,
+	title: PropTypes.string.isRequired,
+}
+
+Exercise.propTypes = {
+	children: PropTypes.string.isRequired,
 }
 
 const ExerciseContainer = styled.div`

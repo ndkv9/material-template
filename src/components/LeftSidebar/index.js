@@ -2,6 +2,7 @@ import styled from '@emotion/styled'
 import React from 'react'
 import mediaqueries from '../../styles/media'
 import Navigation from './Navigation'
+import Close from '../icons/Close'
 import PropTypes from 'prop-types'
 
 const LeftSidebar = ({ navOpen, setNavOpen }) => {
@@ -13,7 +14,7 @@ const LeftSidebar = ({ navOpen, setNavOpen }) => {
 		<LeftSidebarWrapper>
 			<LeftSidebarNav navOpen={navOpen}>
 				<Navigation />
-				{navOpen && <button onClick={closeNavbar}>close</button>}
+				{navOpen && <Close onClick={closeNavbar} />}
 			</LeftSidebarNav>
 		</LeftSidebarWrapper>
 	)
