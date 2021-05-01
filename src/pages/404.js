@@ -5,6 +5,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 const NotFoundPage = () => (
 	<Layout>
 		<h1>404: Not Found</h1>
+
 		<StaticImage
 			src='../images/error.png'
 			alt='Centria banner'
