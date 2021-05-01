@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
 			<Global styles={globalStyles} />
 			<Header navOpen={navOpen} setNavOpen={setNavOpen} />
 			<SiteWrapper>
-				<LeftSidebar navOpen={navOpen} />
+				<LeftSidebar navOpen={navOpen} setNavOpen={setNavOpen} />
 				<SiteContentWrapper>
 					<SiteContent navOpen={navOpen}>{children}</SiteContent>
 				</SiteContentWrapper>

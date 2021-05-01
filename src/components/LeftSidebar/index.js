@@ -4,11 +4,16 @@ import mediaqueries from '../../styles/media'
 import Navigation from './Navigation'
 import PropTypes from 'prop-types'
 
-const LeftSidebar = ({ navOpen }) => {
+const LeftSidebar = ({ navOpen, setNavOpen }) => {
+	const closeNavbar = () => {
+		setNavOpen(!navOpen)
+	}
+
 	return (
 		<LeftSidebarWrapper>
 			<LeftSidebarNav navOpen={navOpen}>
 				<Navigation />
+				{navOpen && <button onClick={closeNavbar}>close</button>}
 			</LeftSidebarNav>
 		</LeftSidebarWrapper>
 	)
