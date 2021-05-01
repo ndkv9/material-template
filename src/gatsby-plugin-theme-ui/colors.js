@@ -5,6 +5,8 @@ const colors = {
 	text: '#000',
 	primary: '#ef5b5b',
 	secondary: '#c70d3a',
+	highlight: '#efeffe',
+	exercise: '#3333ee',
 	sidebar: '#f8f5f1',
 	background: '#fff',
 	borderColor: 'rgba(0, 0, 0, 0.15)',
