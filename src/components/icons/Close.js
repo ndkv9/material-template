@@ -1,6 +1,7 @@
 import React from 'react'
 import SVG from './SVG'
 
+// icon path from https://git.blivesta.com/flexicon/
 const Close = () => (
 	<SVG viewBox='0 0 24 24'>
 		<path
