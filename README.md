@@ -115,13 +115,11 @@ yarn run build
 
 ### Replace document content
 
-To replace document content, you need to delete the content folder in *./src* folder then replace your own document content folder.
-
-![src folder structure](https://i.imgur.com/Ps2C6CM.png)
+To replace document content, you need to delete the content folder in **./src** folder then replace your own document content folder.
 
 ### Document content structure
 
-Basically, all the markdown files in your content folder will be displayed in the side navbar, except the index file. It will be the main page to display when you visit the application, or you can revisit it by clicking on the Centria's logo. For example, the image bellow is a content folder with three main part, each will have a main folder and a index markdown file corresponding, folder *part 1* will have *part1.md* as its index page. And you can have many single page as you want like *exam*, *exercises*, ...
+Basically, all the markdown files in your content folder will be displayed in the side navbar, except the index file. It will be the main page to display when you visit the application, or you can revisit it by clicking on the Centria's logo. For example, the image bellow is a content folder with three main part, each will have a main folder and a index markdown file corresponding, folder **part 1** will have **part1.md** as its index page. And you can have many single page as you want like **exam**, **exercises**, ...
 
 ![content folder structure](https://i.imgur.com/PNoUh8b.png)
 
@@ -131,11 +129,11 @@ In order to display the content from the files, we need to config the front matt
 
 ![content folder structure](https://i.imgur.com/PNoUh8b.png)
 
-About numbering the nav*order, it will work base on each folder layer. For example, if you are in the *./src/content* folder, you should number the contents' order as : 1, 2, 3... But if you in a subfolder like *part1*, or part2 you also need to number the subcontain as 1, 2, 3...So each layer will have a separate ordering and will not overlap each others.
+About numbering the nav*order, it will work base on each folder layer. For example, if you are in the **./src/content** folder, you should number the contents' order as : 1, 2, 3... But if you in a subfolder like **part1**, or part2 you also need to number the subcontain as 1, 2, 3...So each layer will have a separate ordering and will not overlap each others.
 
 ### Application styling
 
-You can adjust the styles of the application by modifying the file *src/gatsby-plugin-theme-ui/color* .
+You can adjust the styles of the application by modifying the file **src/gatsby-plugin-theme-ui/color** .
 
 ### Syntax highlighting
 
@@ -145,7 +143,7 @@ Codeblook highlighting functionality of this app is boostrapping with [theme-ui]
 
 ### Deloy the application on Github Pages
 
-To deploy the application on your own Github Pages, you need to push these code on your Github repo, then create and save a Github TEMPLATE*API secret key. After that got to the *./gatsby-config.js* file on the root folder and adjust the pathPrefix field with your Github repo name. For example, if your app repo name is *my-repo* then it should be *pathPrefix: '/my-repo'*. You also can watch [this tutorial](https://www.youtube.com/watch?v=JIMord7-G10) if you need more help on this.
+To deploy the application on your own Github Pages, you need to push these code on your Github repo, then create and save a Github TEMPLATE_API secret key. After that got to the **./gatsby-config.js** file on the root folder and adjust the pathPrefix field with your Github repo name. For example, if your app repo name is **my-repo** then it should be **pathPrefix: '/my-repo'**. You also can watch [this tutorial](https://www.youtube.com/watch?v=JIMord7-G10) if you need more help on this.
 
 <!-- ROADMAP -->
 
