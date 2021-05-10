@@ -95,14 +95,7 @@ npm run lint
 yarn run lint
 ```
 
-5. Test application with Cypress
-
-```sh
-npm run test:e2e
-yarn run test:e2e
-```
-
-6. Build application code with
+5. Build application code with
 
 ```sh
 npm run build
