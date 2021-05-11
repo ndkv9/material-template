@@ -30,7 +30,7 @@
 		"gatsby-remark-autolink-headers": "^3.2.0",
 		"gatsby-remark-images": "^5.1.0",
 		"gatsby-source-filesystem": "^3.1.0",
-		"gatsby-transformer-remark": "^3.2.0",
+		"gatsby-transformer-remark": "^4.1.0",
 		"gatsby-transformer-sharp": "^3.1.0",
 		"lodash": "^4.17.21",
 		"prismjs": "^1.23.0",
@@ -42,7 +42,7 @@
 		"theme-ui": "^0.8.4"
 	},
 	"devDependencies": {
-		"eslint-plugin-jest": "^24.3.5",
+		"eslint-plugin-jest": "^24.3.6",
 		"prettier": "2.2.1"
 	},
 	"repository": {
