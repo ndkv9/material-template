@@ -3,6 +3,7 @@ import React from 'react'
 import mediaqueries from '../styles/media'
 import IconButton from './icons/IconButton'
 import Menu from './icons/Menu'
+import Close from './icons/Close'
 import LogoWrapper from './LogoWrapper'
 
 const Header = ({ navOpen, setNavOpen }) => {
@@ -12,7 +13,7 @@ const Header = ({ navOpen, setNavOpen }) => {
 				<NavIconButton>
 					<IconButton
 						label='Open Navigation'
-						icon={<Menu />}
+						icon={navOpen ? <Close /> : <Menu />}
 						size={30}
 						onClick={() => {
 							setNavOpen(!navOpen)
