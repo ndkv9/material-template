@@ -1,12 +1,17 @@
 import React from 'react'
 import styled from '@emotion/styled'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
+import useMarkdown from '../utils/useMarkdown'
 import PropTypes from 'prop-types'
 
-export const Exercise = ({ children, title }) => {
+export const Exercise = ({ title, instruction }) => {
+	const mdx = useMarkdown(title)
+
 	return (
 		<ExerciseContainer>
-			<ExerciseTitle>{title}</ExerciseTitle>
-			{children}
+			<ExerciseTitle>{mdx.fields.title}</ExerciseTitle>
+			<MDXRenderer>{mdx.body}</MDXRenderer>
+			<p>{instruction}</p>
 		</ExerciseContainer>
 	)
 }
@@ -21,11 +26,11 @@ export const Note = ({ children }) => {
 }
 
 Exercise.propTypes = {
-	children: PropTypes.string.isRequired,
 	title: PropTypes.string.isRequired,
+	instruction: PropTypes.string.isRequired,
 }
 
-Exercise.propTypes = {
+Note.propTypes = {
 	children: PropTypes.string.isRequired,
 }
 

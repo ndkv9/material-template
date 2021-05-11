@@ -7,7 +7,10 @@ import NavItem from './NavItem'
 const Navigation = () => {
 	const result = useStaticQuery(graphql`
 		query {
-			allMdx(sort: { fields: frontmatter___nav_order, order: ASC }) {
+			allMdx(
+				sort: { fields: frontmatter___nav_order, order: ASC }
+				filter: { frontmatter: { hidden: { ne: true } } }
+			) {
 				edges {
 					node {
 						fields {
