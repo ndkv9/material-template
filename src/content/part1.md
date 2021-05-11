@@ -1,6 +1,7 @@
 ---
 title: 'Part 1 - The beginning'
 nav_order: 2
+hidden: false
 ---
 
 During this course, you will learn how to do basic programs. The course starts from the very beginning and goes deeper as we progress. Before we start coding, we have to know what coding is, exactly.

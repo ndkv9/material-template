@@ -1,6 +1,7 @@
 ---
 title: 'More loops'
 nav_order: 2
+hidden: false
 ---
 
 In part 1 we had a look of the basic while-true loop structure

@@ -1,6 +1,7 @@
 ---
-title: "Exam information"
+title: 'Exam information'
 nav_order: 3
+hidden: false
 ---
 
 ## Part 1-1-3

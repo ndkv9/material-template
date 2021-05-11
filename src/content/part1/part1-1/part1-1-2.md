@@ -1,6 +1,7 @@
 ---
-title: "Further reading"
+title: 'Further reading'
 nav_order: 2
+hidden: false
 ---
 
 ## Part 1-1-2

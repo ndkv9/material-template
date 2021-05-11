@@ -1,6 +1,7 @@
 ---
 title: 'Calculations'
 nav_order: 3
+hidden: false
 ---
 
 Calculations as such should be quite familiar to you already. They are done with same operators in code, as they are in mathematics: addition with **+**, substraction with **-**, multiplication with **\*** and division with **/**. The order of calculation is also very traditional. From left to right, taking into account any brackets, and multiplication and division before addition or substraction.

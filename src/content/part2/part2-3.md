@@ -1,6 +1,7 @@
 ---
 title: 'Methods'
 nav_order: 3
+hidden: false
 ---
 
 Printing to the screen has been done with the statement **Console.WriteLin()**, and reading numbers with the statement **Console.ReadLine()**. Conditional statements have used **if**, repeat statements **while** and **for**. We notice that printing and reading somewhat differ from **if**, **while**, and **for**; the printing and reading commands are followed by parentheses, and sometimes there also are parameters given to the command between the parentheses. These statements "ending with parentheses" are strictly speaking not commands, but rather methods.

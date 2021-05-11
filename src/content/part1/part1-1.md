@@ -1,6 +1,7 @@
 ---
 title: 'Printing and reading'
 nav_order: 1
+hidden: false
 ---
 
 The basic structure of a program is following:

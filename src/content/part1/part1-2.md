@@ -1,6 +1,7 @@
 ---
 title: 'Variables'
 nav_order: 2
+hidden: false
 ---
 
 In the previous section, we introduced our first **variable**, the **string variable**. String is not the only variable in coding. Variables are the basic storages of information in coding. Variables are for example the familiar **string** for text, but also **int** for integers, **double** for numbers with decimal numbers, or **boolean** for truth value. As mentioned earlier, the value for a variable is set with **the equals sign, =**.

@@ -1,6 +1,7 @@
 ---
-title: "Further reading"
+title: 'Further reading'
 nav_order: 9001
+hidden: false
 ---
 
 ## Further reading after the courses

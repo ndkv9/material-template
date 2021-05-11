@@ -19,7 +19,7 @@ module.exports = {
 			resolve: 'gatsby-source-filesystem',
 			options: {
 				name: 'exercises',
-				path: `${__dirname}/src/exercises/`,
+				path: `${__dirname}/src/content/exercises/`,
 			},
 		},
 		// access images folder

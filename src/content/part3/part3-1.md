@@ -1,6 +1,7 @@
 ---
 title: 'Discovering errors'
 nav_order: 1
+hidden: false
 ---
 
 We've so far been practicing the fundamentals of the language, such as variables, conditionals, loops, and methods. Let's now move on to look at some of the factors affecting the understandability of programs, and how errors are found.

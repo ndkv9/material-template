@@ -1,6 +1,7 @@
 ---
 title: 'Subproblems'
 nav_order: 1
+hidden: false
 ---
 
 ## Reading user input

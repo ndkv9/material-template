@@ -1,6 +1,7 @@
 ---
 title: 'Part 2 - Problem solving'
 nav_order: 3
+hidden: false
 ---
 
 The second part of the material focuses on repetition in programs and on how to divide funcionality into distinct units.
