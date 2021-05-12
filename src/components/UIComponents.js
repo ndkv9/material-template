@@ -1,17 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from '@emotion/styled'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import useMarkdown from '../utils/useMarkdown'
 import PropTypes from 'prop-types'
 
-export const Exercise = ({ title, instruction }) => {
+const ExtraInfo = ({ title }) => {
 	const mdx = useMarkdown(title)
+	const [isOpen, setIsOpen] = useState(false)
 
+	if (typeof mdx === 'object') {
+		return (
+			<div>
+				<InfoHeader onClick={() => setIsOpen(!isOpen)}>
+					{mdx.fields.title}
+				</InfoHeader>
+
+				{isOpen && <MDXRenderer>{mdx.body}</MDXRenderer>}
+			</div>
+		)
+	}
+
+	return
+}
+
+export const Exercise = ({ title, children }) => {
 	return (
 		<ExerciseContainer>
-			<ExerciseTitle>{mdx.fields.title}</ExerciseTitle>
-			<MDXRenderer>{mdx.body}</MDXRenderer>
-			<p>{instruction}</p>
+			<ExerciseTitle>{title}</ExerciseTitle>
+			{children}
+			<ExtraInfo title={'Submission Instructions'} />
+			<ExtraInfo title={'Hints'} />
 		</ExerciseContainer>
 	)
 }
@@ -27,7 +45,11 @@ export const Note = ({ children }) => {
 
 Exercise.propTypes = {
 	title: PropTypes.string.isRequired,
-	instruction: PropTypes.string.isRequired,
+	children: PropTypes.string.isRequired,
+}
+
+ExtraInfo.propTypes = {
+	title: PropTypes.string.isRequired,
 }
 
 Note.propTypes = {
@@ -75,4 +97,14 @@ const NoteTitle = styled.div`
 	font-size: 1.2rem;
 	color: ${p => p.theme.colors.primary};
 	margin-bottom: 1rem;
+`
+
+const InfoHeader = styled.h4`
+	margin: 0px !important;
+	color: ${p => p.theme.colors.exercise};
+	&:hover,
+	&:focus,
+	&.is-active {
+		color: ${p => p.theme.colors.primary};
+	}
 `
