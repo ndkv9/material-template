@@ -133,7 +133,7 @@ You can adjust the styles of the application by modifying the file **src/gatsby-
 
 I recommend keep then setting as default since they will have effects to the responsiveness of the application on other platforms. However, you can still adjust the styles of the application by modifying **src/gatsby-plugin-theme-ui/color.js**
 
-![Used application colors]([Imgur](https://i.imgur.com/57kCufZ.png))
+![Used application colors](https://i.imgur.com/fexw2gW.png)
 
 ### Syntax highlighting
 
@@ -142,7 +142,7 @@ Codeblook highlighting functionality of this app is boostrapping with [theme-ui]
 [List of supported languages](https://github.com/FormidableLabs/prism-react-renderer/blob/master/src/vendor/prism/includeLangs.js) by theme-ui.
 
 The defaut highlighting style used in this application is ocenic, you can choose different highlighting styles from [Theme-ui style list](https://theme-ui.com/packages/prism/)
-)
+
 
 ![Highlighting styles](https://i.imgur.com/fexw2gW.png)
 
