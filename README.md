@@ -133,7 +133,7 @@ You can adjust the styles of the application by modifying the file **src/gatsby-
 
 I recommend keep then setting as default since they will have effects to the responsiveness of the application on other platforms. However, you can still adjust the styles of the application by modifying **src/gatsby-plugin-theme-ui/color.js**
 
-![Used application colors](https://i.imgur.com/fexw2gW.png)
+![Used application colors](https://i.imgur.com/57kCufZ.png)
 
 ### Syntax highlighting
 
