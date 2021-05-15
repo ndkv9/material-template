@@ -45,7 +45,7 @@ export const Note = ({ children }) => {
 
 Exercise.propTypes = {
 	title: PropTypes.string.isRequired,
-	children: PropTypes.string.isRequired,
+	children: PropTypes.array.isRequired,
 }
 
 ExtraInfo.propTypes = {
