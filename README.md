@@ -1,5 +1,4 @@
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+
 
 <!-- PROJECT LOGO -->
 <br />
@@ -126,13 +125,26 @@ About numbering the nav*order, it will work base on each folder layer. For examp
 
 ### Application styling
 
-You can adjust the styles of the application by modifying the file **src/gatsby-plugin-theme-ui/color** .
+The global style of this template take reference from [Benjamin De Cock](https://gist.github.com/bendc/ac03faac0bf2aee25b49e5fd260a727d) and you can find it in **./src/styles/global.js**.
+
+To make the application's reponsiveness, the media queries tak reference from [Gatsby theme Novela](https://github.com/narative/gatsby-theme-novela), you can adjust it by modifying **./src/styles/media.js**. All breakpoints can be found inside of theme.breakpoints and each is turned in to a min + 1 and max-width version.
+
+You can adjust the styles of the application by modifying the file **src/gatsby-plugin-theme-ui** .
+
+I recommend keep then setting as default since they will have effects to the responsiveness of the application on other platforms. However, you can still adjust the styles of the application by modifying **src/gatsby-plugin-theme-ui/color.js**
+
+![Used application colors](https://i.imgur.com/57kCufZ.png)
 
 ### Syntax highlighting
 
 Codeblook highlighting functionality of this app is boostrapping with [theme-ui](https://theme-ui.com/guides/syntax-highlighting/). Althought this is the most popular choice for supporting syntax highlight with Gatsby, it still have its limit and cannot cover all programming languages. However, it can be supported with Prismjs to have more languages withhighlight support, the config can be found [here](https://theme-ui.com/packages/prism/).
 
 [List of supported languages](https://github.com/FormidableLabs/prism-react-renderer/blob/master/src/vendor/prism/includeLangs.js) by theme-ui.
+
+The defaut highlighting style used in this application is ocenic, you can choose different highlighting styles from [Theme-ui style list](https://theme-ui.com/packages/prism/)
+
+
+![Highlighting styles](https://i.imgur.com/fexw2gW.png)
 
 ### Deloy the application on Github Pages
 
@@ -171,5 +183,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/ndkv9
+
