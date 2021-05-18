@@ -7,8 +7,6 @@ import PropTypes from 'prop-types'
 
 const License = ({ data, location }) => {
 	const { mdx } = data
-	// eslint-disable-next-line no-console
-	console.log('mdx', mdx)
 
 	return (
 		<Layout tableOfContents={mdx.tableOfContents} location={location}>

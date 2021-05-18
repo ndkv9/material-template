@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from '@emotion/styled'
+import Layout from '../components/Layout'
 import { StaticImage } from 'gatsby-plugin-image'
 
 const NotFoundPage = () => {
 	return (
-		<Container>
+		<Layout tableOfContents={{}} location={{}}>
 			<Header>404: Not Found</Header>
 
 			<StaticImage
@@ -14,20 +15,9 @@ const NotFoundPage = () => {
 				formats={['AUTO', 'WEBP', 'AVIF']}
 			/>
 			<p>You just hit a route that doesn&#39;t exist...</p>
-			<p>
-				Back to the <Back href='/'>main page</Back>
-			</p>
-		</Container>
+		</Layout>
 	)
 }
-
-const Container = styled.div`
-	text-align: center;
-`
-const Back = styled.a`
-	text-decoration: none;
-	color: ${p => p.theme.colors.primary};
-`
 
 const Header = styled.div`
 	font-size: 1.5rem;
