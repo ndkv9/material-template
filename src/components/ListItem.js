@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 const ListItem = ({ location, item }) => {
 	return (
-		<ListItemLink to={location.pathname + item.url}>
+		<ListItemLink href={location.pathname + item.url}>
 			{item.title}
 		</ListItemLink>
 	)
