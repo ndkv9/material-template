@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import { StaticImage } from 'gatsby-plugin-image'
-import { Link } from 'gatsby'
 
 const NotFoundPage = () => {
 	return (
@@ -16,7 +15,7 @@ const NotFoundPage = () => {
 			/>
 			<p>You just hit a route that doesn&#39;t exist...</p>
 			<p>
-				Back to the <Back to='/'>main page</Back>
+				Back to the <Back href='/'>main page</Back>
 			</p>
 		</Container>
 	)
@@ -25,7 +24,7 @@ const NotFoundPage = () => {
 const Container = styled.div`
 	text-align: center;
 `
-const Back = styled(Link)`
+const Back = styled.a`
 	text-decoration: none;
 	color: ${p => p.theme.colors.primary};
 `
