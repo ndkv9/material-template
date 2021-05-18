@@ -4,6 +4,24 @@ nav_order: 105
 hidden: true
 ---
 
-This material has been created by Heikki Ahonen and the material is licensed with [**CC BY-NC-SA 4.0**](https://creativecommons.org/licenses/by-nc-sa/4.0/deed). You can use and share it freely, as long as the names of original creator(s) are not removed. If you make changes to the material, it has to be licensed with the same license. Commercial use of the material is forbidden without the original creator's permission.
+MIT License
 
-The course structure is based on a material made [**Agile Education Research Group**](https://www.helsinki.fi/en/researchgroups/data-driven-education) from the University of Helsinki. More information and its license can be found [**here**](https://ohjelmointi-19.mooc.fi/credits).
+Copyright (c) 2021 Centria University of Applied Sciences
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
