@@ -5,16 +5,11 @@ import { Themed } from 'theme-ui'
 import { globalStyles } from '../styles'
 import mediaqueries from '../styles/media'
 import LeftSidebar from './LeftSidebar'
-import RightSidebar from './RightSidebar'
 import Header from './Header'
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 
-const Layout = ({
-	children,
-	tableOfContents = {},
-	location = {},
-}) => {
+const Layout = ({ children }) => {
 	const [navOpen, setNavOpen] = useState(false)
 
 	return (
@@ -26,12 +21,7 @@ const Layout = ({
 				<SiteContentWrapper>
 					<SiteContent navOpen={navOpen}>{children}</SiteContent>
 				</SiteContentWrapper>
-				{tableOfContents.items && (
-					<RightSidebar
-						tableOfContents={tableOfContents}
-						location={location}
-					/>
-				)}
+
 				<Footer>
 					<p>
 						© {new Date().getFullYear()}, Built with
@@ -93,8 +83,6 @@ const Footer = styled.footer`
 `
 Layout.propTypes = {
 	children: PropTypes.node.isRequired,
-	tableOfContents: PropTypes.object.isRequired,
-	location: PropTypes.object.isRequired,
 }
 
 export default Layout

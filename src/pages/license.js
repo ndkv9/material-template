@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import styled from '@emotion/styled'
 import PropTypes from 'prop-types'
 
-const License = ({ data, location }) => {
+const License = ({ data }) => {
 	const { mdx } = data
 
 	return (
@@ -40,7 +40,6 @@ License.propTypes = {
 	data: PropTypes.shape({
 		mdx: PropTypes.object.isRequired,
 	}).isRequired,
-	location: PropTypes.object.isRequired,
 }
 
 export default License
