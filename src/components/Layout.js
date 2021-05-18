@@ -6,6 +6,7 @@ import { globalStyles } from '../styles'
 import mediaqueries from '../styles/media'
 import LeftSidebar from './LeftSidebar'
 import Header from './Header'
+import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 
 const Layout = ({ children }) => {
@@ -21,8 +22,13 @@ const Layout = ({ children }) => {
 				</SiteContentWrapper>
 
 				<Footer>
-					© {new Date().getFullYear()}, Built with
-					<a href='https://web.centria.fi/'> Centria</a>
+					<p>
+						© {new Date().getFullYear()}, Built with
+						<a href='https://web.centria.fi/'> Centria</a>
+					</p>
+					<p>
+						More information about <Link to='/license'>License</Link>
+					</p>
 				</Footer>
 			</SiteWrapper>
 		</Themed.root>
@@ -63,8 +69,8 @@ const Footer = styled.footer`
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	height: 5rem;
-	padding-top: 2rem;
+	height: 6rem;
+	padding-top: 10px;
 	font-size: 1rem;
 
 	background: ${p => p.theme.colors.footer};
