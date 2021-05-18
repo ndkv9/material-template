@@ -5,11 +5,11 @@ import Layout from '../components/Layout'
 import styled from '@emotion/styled'
 import PropTypes from 'prop-types'
 
-const License = ({ data }) => {
+const License = ({ data, location }) => {
 	const { mdx } = data
 
 	return (
-		<Layout>
+		<Layout tableOfContents={mdx.tableOfContents} location={location}>
 			<Heading>{mdx.frontmatter.title}</Heading>
 			<MDXRenderer>{mdx.body}</MDXRenderer>
 		</Layout>
@@ -31,6 +31,7 @@ export const query = graphql`
 				title
 			}
 			body
+			tableOfContents
 		}
 	}
 `
