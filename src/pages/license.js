@@ -40,6 +40,7 @@ License.propTypes = {
 	data: PropTypes.shape({
 		mdx: PropTypes.object.isRequired,
 	}).isRequired,
+	location: PropTypes.object.isRequired,
 }
 
 export default License

@@ -12,6 +12,7 @@ import PropTypes from 'prop-types'
 
 const Layout = ({ children, tableOfContents, location }) => {
 	const [navOpen, setNavOpen] = useState(false)
+
 	return (
 		<Themed.root>
 			<Global styles={globalStyles} />

@@ -17,6 +17,7 @@ const Navigation = () => {
 							title
 							slug
 						}
+						tableOfContents
 					}
 				}
 			}
