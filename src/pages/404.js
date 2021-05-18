@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 import { StaticImage } from 'gatsby-plugin-image'
 
 const NotFoundPage = () => (
-	<Layout>
+	<Layout tableOfContents={{}} location={{}}>
 		<Header>404: Not Found</Header>
 
 		<StaticImage
