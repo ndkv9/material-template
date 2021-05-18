@@ -8,13 +8,13 @@ import { MDXProvider } from '@mdx-js/react'
 import { Exercise, Note } from '../components/UIComponents'
 import { Image, AspectImage, Embed } from 'theme-ui'
 
-const DocsTemplate = ({ data, location }) => {
+const DocsTemplate = ({ data }) => {
 	const { mdx } = data
 
 	const shortcodes = { Image, AspectImage, Embed, Exercise, Note }
 
 	return (
-		<Layout tableOfContents={mdx.tableOfContents} location={location}>
+		<Layout>
 			<Heading>{mdx.frontmatter.title}</Heading>
 			<MDXProvider components={shortcodes}>
 				<MDXRenderer>{mdx.body}</MDXRenderer>
