@@ -10,7 +10,11 @@ import Header from './Header'
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 
-const Layout = ({ children, tableOfContents, location }) => {
+const Layout = ({
+	children,
+	tableOfContents = {},
+	location = {},
+}) => {
 	const [navOpen, setNavOpen] = useState(false)
 
 	return (
