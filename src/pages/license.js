@@ -5,11 +5,11 @@ import Layout from '../components/Layout'
 import styled from '@emotion/styled'
 import PropTypes from 'prop-types'
 
-const License = ({ data }) => {
+const License = ({ data, location }) => {
 	const { mdx } = data
 
 	return (
-		<Layout>
+		<Layout tableOfContents={mdx.tableOfContents} location={location}>
 			<Heading>{mdx.frontmatter.title}</Heading>
 			<MDXRenderer>{mdx.body}</MDXRenderer>
 		</Layout>
@@ -40,6 +40,7 @@ License.propTypes = {
 	data: PropTypes.shape({
 		mdx: PropTypes.object.isRequired,
 	}).isRequired,
+	location: PropTypes.object.isRequired,
 }
 
 export default License
