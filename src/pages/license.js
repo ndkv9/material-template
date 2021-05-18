@@ -9,7 +9,7 @@ const License = ({ data }) => {
 	const { mdx } = data
 
 	return (
-		<Layout tableOfContents={mdx.tableOfContents} location={location}>
+		<Layout>
 			<Heading>{mdx.frontmatter.title}</Heading>
 			<MDXRenderer>{mdx.body}</MDXRenderer>
 		</Layout>
