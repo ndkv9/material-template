@@ -42,7 +42,7 @@
         <li><a href="#config-content-files-front-matter">Config content files front matter</a></li>
         <li><a href="#apllication-styling">Application styling</a></li>
         <li><a href="#syntax-highlighting">Syntax highlighting</a></li>
-        <li><a href="#deploy-the-application-on-github-pages">Deloy the application on Github Pages</a></li>
+        <li><a href="#deploy-the-application-on-github-pages">Deploy the application on Github Pages</a></li>
       </ul>
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
@@ -146,9 +146,17 @@ The defaut highlighting style used in this application is ocenic, you can choose
 
 ![Highlighting styles](https://i.imgur.com/fexw2gW.png)
 
-### Deloy the application on Github Pages
+### Deploy the application on Github Pages
 
-To deploy the application on your own Github Pages, you need to push these code on your Github repo, then create and save a Github TEMPLATE_API secret key. After that got to the **./gatsby-config.js** file on the root folder and adjust the pathPrefix field with your Github repo name. For example, if your app repo name is **my-repo** then it should be **pathPrefix: '/my-repo'**. You also can watch [this tutorial](https://www.youtube.com/watch?v=JIMord7-G10) if you need more help on this.
+To deploy the application on your own Github Pages, you can clone this repo as a template for your new repo on your Github account, then create and save a Github TEMPLATE_API secret key like the image below.
+
+![Setup template secret key](https://i.imgur.com/2mwF6Ix.png)
+
+After that got to the **./gatsby-config.js** file on the root folder and adjust the pathPrefix field with your Github repo name. For example, if your app repo name is **my-repo** then it should be **pathPrefix: '/my-repo'**. 
+
+![Change pathPrefix](https://i.imgur.com/4d4K5et.png)
+
+You also can watch [this tutorial](https://www.youtube.com/watch?v=JIMord7-G10) if you need more help on this.
 
 <!-- ROADMAP -->
 
