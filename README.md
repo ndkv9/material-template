@@ -122,7 +122,7 @@ then go to **SETTINGS**, choose **SECRETS**, create **New repository secret**, n
 
 After that got to the **./gatsby-config.js** file on the root folder and adjust the pathPrefix field with your Github repo name. For example, if your app repo name is **my-repo** then it should be **pathPrefix: '/my-repo'**. 
 
-![Change pathPrefix](https://i.imgur.com/HkDUAph.png)
+![Change pathPrefix](https://i.imgur.com/e9O9wYs.png)
 
 You also can watch [this tutorial](https://www.youtube.com/watch?v=JIMord7-G10) if you need more help on this.
 
