@@ -37,7 +37,7 @@
     <li>
       <a href="#usage">Getting Started</a>
       <ul>
-        <li><a href="#config-to-deploy-the-application-on-github-pages">COnfig tp deploy the application on Github Pages</a></li>
+        <li><a href="#config-to-deploy-the-application-on-github-pages">Config tp deploy the application on Github Pages</a></li>
         <li><a href="#replace-document-content">Replace document content</a></li>
         <li><a href="#update-repositories-created-by-the-template">Update repositories created by the template</a></li>
         <li><a href="#document-content-structure">Document content structure</a></li>
