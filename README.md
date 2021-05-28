@@ -37,12 +37,13 @@
     <li>
       <a href="#usage">Getting Started</a>
       <ul>
+        <li><a href="#config-to-deploy-the-application-on-github-pages">COnfig tp deploy the application on Github Pages</a></li>
         <li><a href="#replace-document-content">Replace document content</a></li>
+        <li><a href="#update-repositories-created-by-the-template">Update repositories created by the template</a></li>
         <li><a href="#document-content-structure">Document content structure</a></li>
         <li><a href="#config-content-files-front-matter">Config content files front matter</a></li>
         <li><a href="#apllication-styling">Application styling</a></li>
         <li><a href="#syntax-highlighting">Syntax highlighting</a></li>
-        <li><a href="#deploy-the-application-on-github-pages">Deploy the application on Github Pages</a></li>
       </ul>
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
@@ -103,11 +104,39 @@ yarn run build
 
 <!-- USAGE EXAMPLES -->
 
-## Usage
+## Getting Started
+
+### Config to deploy the application on Github Pages
+
+To deploy the application on your own Github Pages, first you need create a secret key on your account by going to ***account setting** then **developer settings** and **personal access tokens** and **generate new token**, tick on **repo** option as the picture below:
+
+![genetate token](https://i.imgur.com/444VSXd.png)
+
+After that, clone this repo as a template for the new repo on your Github account, and make sure mark it as **PUBLIC**
+
+![genetate token](https://i.imgur.com/P0CSauu.png)
+
+then go to **SETTINGS**, choose **SECRETS**, create **New repository secret**, name it as **TEMPLATE_API** and paste the **personal access token** you created before then click **Add secret** as the image below:
+
+![genetate token](https://i.imgur.com/QYIRxCE.png)
+
+After that got to the **./gatsby-config.js** file on the root folder and adjust the pathPrefix field with your Github repo name. For example, if your app repo name is **my-repo** then it should be **pathPrefix: '/my-repo'**. 
+
+![Change pathPrefix](https://i.imgur.com/4d4K5et.png)
+
+You also can watch [this tutorial](https://www.youtube.com/watch?v=JIMord7-G10) if you need more help on this.
 
 ### Replace document content
 
 To replace document content, you need to delete the content folder in **./src** folder then replace your own document content folder.
+
+### Update repositories created by the template
+
+When the template get some new features and you also want to update repositories created with this, you can run the command below:
+
+```sh
+npx update-template https://github.com/centria/template
+```
 
 ### Document content structure
 
@@ -143,20 +172,7 @@ Codeblook highlighting functionality of this app is boostrapping with [theme-ui]
 
 The defaut highlighting style used in this application is ocenic, you can choose different highlighting styles from [Theme-ui style list](https://theme-ui.com/packages/prism/)
 
-
 ![Highlighting styles](https://i.imgur.com/fexw2gW.png)
-
-### Deploy the application on Github Pages
-
-To deploy the application on your own Github Pages, you can clone this repo as a template for your new repo on your Github account, then create and save a Github TEMPLATE_API secret key like the image below.
-
-![Setup template secret key](https://i.imgur.com/2mwF6Ix.png)
-
-After that got to the **./gatsby-config.js** file on the root folder and adjust the pathPrefix field with your Github repo name. For example, if your app repo name is **my-repo** then it should be **pathPrefix: '/my-repo'**. 
-
-![Change pathPrefix](https://i.imgur.com/4d4K5et.png)
-
-You also can watch [this tutorial](https://www.youtube.com/watch?v=JIMord7-G10) if you need more help on this.
 
 <!-- ROADMAP -->
 
