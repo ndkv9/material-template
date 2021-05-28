@@ -122,7 +122,7 @@ then go to **SETTINGS**, choose **SECRETS**, create **New repository secret**, n
 
 After that got to the **./gatsby-config.js** file on the root folder and adjust the pathPrefix field with your Github repo name. For example, if your app repo name is **my-repo** then it should be **pathPrefix: '/my-repo'**. 
 
-![Change pathPrefix](https://i.imgur.com/4d4K5et.png)
+![Change pathPrefix](https://i.imgur.com/HkDUAph.png)
 
 You also can watch [this tutorial](https://www.youtube.com/watch?v=JIMord7-G10) if you need more help on this.
 
@@ -142,13 +142,13 @@ npx update-template https://github.com/centria/template
 
 Basically, all the markdown files in your content folder will be displayed in the side navbar, except the index file. It will be the main page to display when you visit the application, or you can revisit it by clicking on the Centria's logo. For example, the image bellow is a content folder with three main part, each will have a main folder and a index markdown file corresponding, folder **part 1** will have **part1.md** as its index page. And you can have many single page as you want like **exam**, **exercises**, ...
 
-![content folder structure](https://i.imgur.com/PNoUh8b.png)
+![content folder structure](https://i.imgur.com/BCddHmg.png)
 
 ### Config content files front matter
 
 In order to display the content from the files, we need to config the front matter data so the app can get its necessary information. Two compulsory fields need to have for each file are title and nav_order. Title will be used to display the part's name in the navbar and anv_order will be used for sorting those name in navbar. Bellow is the frontmatter of part 1.
 
-![content folder structure](https://i.imgur.com/PNoUh8b.png)
+![Front matter](https://i.imgur.com/DJgGPsE.png)
 
 About numbering the nav*order, it will work base on each folder layer. For example, if you are in the **./src/content** folder, you should number the contents' order as : 1, 2, 3... But if you in a subfolder like **part1**, or part2 you also need to number the subcontain as 1, 2, 3...So each layer will have a separate ordering and will not overlap each others.
 
@@ -162,7 +162,7 @@ You can adjust the styles of the application by modifying the file **src/gatsby-
 
 I recommend keep then setting as default since they will have effects to the responsiveness of the application on other platforms. However, you can still adjust the styles of the application by modifying **src/gatsby-plugin-theme-ui/color.js**
 
-![Used application colors](https://i.imgur.com/57kCufZ.png)
+![Used application colors](https://i.imgur.com/2PKRqJ3.png)
 
 ### Syntax highlighting
 
@@ -172,7 +172,7 @@ Codeblook highlighting functionality of this app is boostrapping with [theme-ui]
 
 The defaut highlighting style used in this application is ocenic, you can choose different highlighting styles from [Theme-ui style list](https://theme-ui.com/packages/prism/)
 
-![Highlighting styles](https://i.imgur.com/fexw2gW.png)
+![Highlighting styles](https://i.imgur.com/kZkM26m.png)
 
 <!-- ROADMAP -->
 
