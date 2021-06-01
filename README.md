@@ -42,7 +42,7 @@
         <li><a href="#update-repositories-created-by-the-template">Update repositories created by the template</a></li>
         <li><a href="#document-content-structure">Document content structure</a></li>
         <li><a href="#config-content-files-front-matter">Config content files front matter</a></li>
-        <li><a href="#apllication-styling">Application styling</a></li>
+        <li><a href="#application-styling">Application styling</a></li>
         <li><a href="#syntax-highlighting">Syntax highlighting</a></li>
       </ul>
     </li>
