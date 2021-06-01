@@ -44,6 +44,7 @@ This is not a coding exorcist.
 You will find following structure in the exercise:
   
 ```cpp
+
 using System;
 
 namespace exercise_05
