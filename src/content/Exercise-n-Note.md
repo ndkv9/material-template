@@ -37,5 +37,32 @@ else
   
 This is not a coding exorcist.
 </Exercise>
+  
+
+  <Exercise title={'1.5'}>
+  
+    You will find following structure in the exercise:
+  
+```cs
+using System;
+
+namespace exercise_05
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            string name = "Ada Lovelace";
+            // Write your code here:
+            
+        }
+    }
+}
+```
+
+Modify the code, so that it prints **Hello Ada LoveLace!**
+Do not modify the variable content!
+    
+  </Exercise>
 
 <Note>This is just a message for someone to read</Note>
