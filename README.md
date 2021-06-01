@@ -39,6 +39,8 @@
       <ul>
         <li><a href="#config-to-deploy-the-application-on-github-pages">Config to deploy the application on Github Pages</a></li>
         <li><a href="#replace-document-content">Replace document content</a></li>
+        <li><a href="#about-hidden-content">About hidden content</a></li>
+        <li><a href="#about-license">About license</a></li>
         <li><a href="#update-repositories-created-by-the-template">Update repositories created by the template</a></li>
         <li><a href="#document-content-structure">Document content structure</a></li>
         <li><a href="#config-content-files-front-matter">Config content files front matter</a></li>
@@ -130,6 +132,16 @@ You also can watch [this tutorial](https://www.youtube.com/watch?v=JIMord7-G10) 
 
 To replace document content, you need to delete the content folder in **./src** folder then replace your own document content folder.
 
+### About hidden content
+
+In the ***./src/content***, you will find a ***hidden-docs*** folder. This will be the folder contains all of the content that you want them to be hidden likes LICENSE, exercise instructions or exercise solutions. To turn a Markdown file into a hidden file, you just need to set the hidden field in its front matter to be ***true*** as below
+
+![Hidden Content](https://i.imgur.com/wFpgBTm.png)
+
+### About License
+
+In the project, you can find that we have two LICENSE files, one is in the foot directory, the other is in the hidden-docs directory. The first one is for Github, and the second one is the one you can access in the Footer section of the page. Both of them are supposed to have the same content.
+
 ### Update repositories created by the template
 
 When the template get some new features and you also want to update repositories created with this, you can run the command below:
@@ -166,7 +178,9 @@ I recommend keep then setting as default since they will have effects to the res
 
 ### Syntax highlighting
 
-Codeblook highlighting functionality of this app is boostrapping with [theme-ui](https://theme-ui.com/guides/syntax-highlighting/). Althought this is the most popular choice for supporting syntax highlight with Gatsby, it still have its limit and cannot cover all programming languages. However, it can be supported with Prismjs to have more languages withhighlight support, the config can be found [here](https://theme-ui.com/packages/prism/).
+Codeblook highlighting functionality of this app is boostrapping with [theme-ui](https://theme-ui.com/guides/syntax-highlighting/). Althought this is the most popular choice for supporting syntax highlight with Gatsby, it still have its limit and cannot cover all programming languages. However, it can be supported with Prismjs to have more languages withhighlight support, the config can be found [here](https://theme-ui.com/packages/prism/). For instance, if you want the support highlighting for R language, you can adjust the content of ***src/gatsby-plugin-theme-ui/components.js*** as
+
+![R highlighting](https://i.imgur.com/PYN1j8B.png)
 
 [List of supported languages](https://github.com/FormidableLabs/prism-react-renderer/blob/master/src/vendor/prism/includeLangs.js) by theme-ui.
 
