@@ -7,6 +7,34 @@ hidden: false
 <Exercise title={'First Exercise'}>
 This is a coding exercise.
 
+  ```cpp
+
+int values = 0;
+int sum = 0;
+
+while (true)
+{
+  Console.WriteLine("Provide a value, a negative value ends the program");
+  int value = Convert.ToInt32(Console.ReadLine());
+  if (value < 0)
+  {
+    break;
+  }
+
+  values = values + 1;
+  sum = sum + value;
+}
+
+if (sum == 0)
+{
+  Console.WriteLine("The average of the values could not be calculated.");
+}
+else
+{
+  Console.WriteLine("Average of values: " + (1.0 * sum / value));
+}
+```
+  
 This is not a coding exorcist.
 </Exercise>
 
