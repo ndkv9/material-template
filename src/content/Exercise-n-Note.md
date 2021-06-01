@@ -37,7 +37,8 @@ else
   
 This is not a coding exorcist.
 </Exercise>
-  
+
+Dummy text between tags.
 
 <Exercise title={'Exercise 1.5'}>
   
