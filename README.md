@@ -180,7 +180,7 @@ I recommend keep then setting as default since they will have effects to the res
 
 Codeblook highlighting functionality of this app is boostrapping with [theme-ui](https://theme-ui.com/guides/syntax-highlighting/). Althought this is the most popular choice for supporting syntax highlight with Gatsby, it still have its limit and cannot cover all programming languages. However, it can be supported with Prismjs to have more languages withhighlight support, the config can be found [here](https://theme-ui.com/packages/prism/). For instance, if you want the support highlighting for R language, you can adjust the content of ***src/gatsby-plugin-theme-ui/components.js*** as
 
-![R highlighting](https://i.imgur.com/PYN1j8B.png)
+![R highlighting](https://i.imgur.com/g7zlA4p.png)
 
 [List of supported languages](https://github.com/FormidableLabs/prism-react-renderer/blob/master/src/vendor/prism/includeLangs.js) by theme-ui.
 
