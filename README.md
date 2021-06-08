@@ -35,14 +35,17 @@
       </ul>
     </li>
     <li>
-      <a href="#usage">Getting Started</a>
+      <a href="#getting-started">Getting Started</a>
       <ul>
+        <li><a href="#config-to-deploy-the-application-on-github-pages">Config to deploy the application on Github Pages</a></li>
         <li><a href="#replace-document-content">Replace document content</a></li>
+        <li><a href="#about-hidden-content">About hidden content</a></li>
+        <li><a href="#about-license">About license</a></li>
+        <li><a href="#update-repositories-created-by-the-template">Update repositories created by the template</a></li>
         <li><a href="#document-content-structure">Document content structure</a></li>
         <li><a href="#config-content-files-front-matter">Config content files front matter</a></li>
-        <li><a href="#apllication-styling">Application styling</a></li>
+        <li><a href="#application-styling">Application styling</a></li>
         <li><a href="#syntax-highlighting">Syntax highlighting</a></li>
-        <li><a href="#deploy-the-application-on-github-pages">Deploy the application on Github Pages</a></li>
       </ul>
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
@@ -103,23 +106,61 @@ yarn run build
 
 <!-- USAGE EXAMPLES -->
 
-## Usage
+## Getting Started
+
+### Config to deploy the application on Github Pages
+
+To deploy the application on your own Github Pages, first you need create a secret key on your account by going to ***account setting** then **developer settings** and **personal access tokens** and **generate new token**, tick on **repo** option as the picture below:
+
+![genetate token](https://i.imgur.com/444VSXd.png)
+
+After that, clone this repo as a template for the new repo on your Github account, and make sure mark it as **PUBLIC**
+
+![genetate token](https://i.imgur.com/P0CSauu.png)
+
+then go to **SETTINGS**, choose **SECRETS**, create **New repository secret**, name it as **TEMPLATE_API** and paste the **personal access token** you created before then click **Add secret** as the image below:
+
+![genetate token](https://i.imgur.com/QYIRxCE.png)
+
+After that got to the **./gatsby-config.js** file on the root folder and adjust the pathPrefix field with your Github repo name. For example, if your app repo name is **my-repo** then it should be **pathPrefix: '/my-repo'**. 
+
+![Change pathPrefix](https://i.imgur.com/e9O9wYs.png)
+
+You also can watch [this tutorial](https://www.youtube.com/watch?v=JIMord7-G10) if you need more help on this.
 
 ### Replace document content
 
 To replace document content, you need to delete the content folder in **./src** folder then replace your own document content folder.
 
+### About hidden content
+
+In the ***./src/content***, you will find a ***hidden-docs*** folder. This will be the folder contains all of the content that you want them to be hidden likes LICENSE, exercise instructions or exercise solutions. To turn a Markdown file into a hidden file, you just need to set the hidden field in its front matter to be ***true*** as below
+
+![Hidden Content](https://i.imgur.com/wFpgBTm.png)
+
+### About License
+
+In the project, you can find that we have two LICENSE files, one is in the foot directory, the other is in the hidden-docs directory. The first one is for Github, and the second one is the one you can access in the Footer section of the page. Both of them are supposed to have the same content.
+
+### Update repositories created by the template
+
+When the template get some new features and you also want to update repositories created with this, you can run the command below:
+
+```sh
+npx update-template https://github.com/centria/template
+```
+
 ### Document content structure
 
 Basically, all the markdown files in your content folder will be displayed in the side navbar, except the index file. It will be the main page to display when you visit the application, or you can revisit it by clicking on the Centria's logo. For example, the image bellow is a content folder with three main part, each will have a main folder and a index markdown file corresponding, folder **part 1** will have **part1.md** as its index page. And you can have many single page as you want like **exam**, **exercises**, ...
 
-![content folder structure](https://i.imgur.com/PNoUh8b.png)
+![content folder structure](https://i.imgur.com/BCddHmg.png)
 
 ### Config content files front matter
 
 In order to display the content from the files, we need to config the front matter data so the app can get its necessary information. Two compulsory fields need to have for each file are title and nav_order. Title will be used to display the part's name in the navbar and anv_order will be used for sorting those name in navbar. Bellow is the frontmatter of part 1.
 
-![content folder structure](https://i.imgur.com/PNoUh8b.png)
+![Front matter](https://i.imgur.com/DJgGPsE.png)
 
 About numbering the nav*order, it will work base on each folder layer. For example, if you are in the **./src/content** folder, you should number the contents' order as : 1, 2, 3... But if you in a subfolder like **part1**, or part2 you also need to number the subcontain as 1, 2, 3...So each layer will have a separate ordering and will not overlap each others.
 
@@ -133,30 +174,19 @@ You can adjust the styles of the application by modifying the file **src/gatsby-
 
 I recommend keep then setting as default since they will have effects to the responsiveness of the application on other platforms. However, you can still adjust the styles of the application by modifying **src/gatsby-plugin-theme-ui/color.js**
 
-![Used application colors](https://i.imgur.com/57kCufZ.png)
+![Used application colors](https://i.imgur.com/2PKRqJ3.png)
 
 ### Syntax highlighting
 
-Codeblook highlighting functionality of this app is boostrapping with [theme-ui](https://theme-ui.com/guides/syntax-highlighting/). Althought this is the most popular choice for supporting syntax highlight with Gatsby, it still have its limit and cannot cover all programming languages. However, it can be supported with Prismjs to have more languages withhighlight support, the config can be found [here](https://theme-ui.com/packages/prism/).
+Codeblook highlighting functionality of this app is boostrapping with [theme-ui](https://theme-ui.com/guides/syntax-highlighting/). Althought this is the most popular choice for supporting syntax highlight with Gatsby, it still have its limit and cannot cover all programming languages. However, it can be supported with Prismjs to have more languages withhighlight support, the config can be found [here](https://theme-ui.com/packages/prism/). For instance, if you want the support highlighting for R language, you can adjust the content of ***src/gatsby-plugin-theme-ui/components.js*** as
+
+![R highlighting](https://i.imgur.com/g7zlA4p.png)
 
 [List of supported languages](https://github.com/FormidableLabs/prism-react-renderer/blob/master/src/vendor/prism/includeLangs.js) by theme-ui.
 
 The defaut highlighting style used in this application is ocenic, you can choose different highlighting styles from [Theme-ui style list](https://theme-ui.com/packages/prism/)
 
-
-![Highlighting styles](https://i.imgur.com/fexw2gW.png)
-
-### Deploy the application on Github Pages
-
-To deploy the application on your own Github Pages, you can clone this repo as a template for your new repo on your Github account, then create and save a Github TEMPLATE_API secret key like the image below.
-
-![Setup template secret key](https://i.imgur.com/2mwF6Ix.png)
-
-After that got to the **./gatsby-config.js** file on the root folder and adjust the pathPrefix field with your Github repo name. For example, if your app repo name is **my-repo** then it should be **pathPrefix: '/my-repo'**. 
-
-![Change pathPrefix](https://i.imgur.com/4d4K5et.png)
-
-You also can watch [this tutorial](https://www.youtube.com/watch?v=JIMord7-G10) if you need more help on this.
+![Highlighting styles](https://i.imgur.com/kZkM26m.png)
 
 <!-- ROADMAP -->
 
