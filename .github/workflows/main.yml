@@ -9,6 +9,10 @@ on:
     branches: [master]
     types: [opened, synchronize]
 
+  defaults:
+    run:
+      working-directory: web
+
 jobs:
   deployment_pipeline:
     runs-on: ubuntu-latest
