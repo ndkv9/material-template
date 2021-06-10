@@ -7,7 +7,7 @@
     <img src="https://i.imgur.com/Ps2C6CM.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Documentation Template</h3>
+  <h3 align="center">Document Template</h3>
 
   <p align="center">
    Document Template for Markdown content.
