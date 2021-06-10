@@ -9,13 +9,13 @@ on:
     branches: [master]
     types: [opened, synchronize]
 
-  defaults:
-    run:
-      working-directory: src
-
 jobs:
   deployment_pipeline:
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: src
 
     env:
       SKIP_COMMITS: ${{ !contains(join(toJson(github.event.commits.*.message), ', '), '#skip') }}
