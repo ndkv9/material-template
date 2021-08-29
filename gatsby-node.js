@@ -12,10 +12,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const result = await graphql(
     `
       {
-        allMdx(
-          filter: { frontmatter: { hidden: { ne: true } } }
-          sort: { fields: frontmatter___nav_order, order: ASC }
-        ) {
+        allMdx(sort: { fields: frontmatter___nav_order, order: ASC }) {
           edges {
             node {
               fields {
