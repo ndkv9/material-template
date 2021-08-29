@@ -168,7 +168,7 @@ About numbering the nav*order, it will work base on each folder layer. For examp
 
 The global style of this template take reference from [Benjamin De Cock](https://gist.github.com/bendc/ac03faac0bf2aee25b49e5fd260a727d) and you can find it in **./src/styles/global.js**.
 
-To make the application's reponsiveness, the media queries tak reference from [Gatsby theme Novela](https://github.com/narative/gatsby-theme-novela), you can adjust it by modifying **./src/styles/media.js**. All breakpoints can be found inside of theme.breakpoints and each is turned in to a min + 1 and max-width version.
+To make the application's reponsiveness, the media queries take reference from [Gatsby theme Novela](https://github.com/narative/gatsby-theme-novela), you can adjust it by modifying **./src/styles/media.js**. All breakpoints can be found inside of theme.breakpoints and each is turned in to a min + 1 and max-width version.
 
 You can adjust the styles of the application by modifying the file **src/gatsby-plugin-theme-ui** .
 
