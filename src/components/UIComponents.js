@@ -5,55 +5,55 @@ import useMarkdown from '../utils/useMarkdown'
 import PropTypes from 'prop-types'
 
 const ExtraInfo = ({ title }) => {
-	const mdx = useMarkdown(title)
-	const [isOpen, setIsOpen] = useState(false)
+  const mdx = useMarkdown(title)
+  const [isOpen, setIsOpen] = useState(false)
 
-	if (typeof mdx === 'object') {
-		return (
-			<div>
-				<InfoHeader onClick={() => setIsOpen(!isOpen)}>
-					{mdx.fields.title}
-				</InfoHeader>
+  if (typeof mdx === 'object') {
+    return (
+      <div>
+        <InfoHeader onClick={() => setIsOpen(!isOpen)}>
+          {mdx.fields.title}
+        </InfoHeader>
 
-				{isOpen && <MDXRenderer>{mdx.body}</MDXRenderer>}
-			</div>
-		)
-	}
+        {isOpen && <MDXRenderer>{mdx.body}</MDXRenderer>}
+      </div>
+    )
+  }
 
-	return
+  return
 }
 
 export const Exercise = ({ title, children }) => {
-	return (
-		<ExerciseContainer>
-			<ExerciseTitle>{title}</ExerciseTitle>
-			{children}
-			<ExtraInfo title={'Submission Instructions'} />
-			<ExtraInfo title={'Hints'} />
-		</ExerciseContainer>
-	)
+  return (
+    <ExerciseContainer>
+      <ExerciseTitle>{title}</ExerciseTitle>
+      {children}
+      <ExtraInfo title={'Submission Instructions'} />
+      <ExtraInfo title={'Hints'} />
+    </ExerciseContainer>
+  )
 }
 
 export const Note = ({ children }) => {
-	return (
-		<NoteContainer>
-			<NoteTitle>Note!</NoteTitle>
-			{children}
-		</NoteContainer>
-	)
+  return (
+    <NoteContainer>
+      <NoteTitle>Note!</NoteTitle>
+      {children}
+    </NoteContainer>
+  )
 }
 
 Exercise.propTypes = {
-	title: PropTypes.string.isRequired,
-	children: PropTypes.array.isRequired,
+  title: PropTypes.string.isRequired,
+  children: PropTypes.array.isRequired,
 }
 
 ExtraInfo.propTypes = {
-	title: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
 }
 
 Note.propTypes = {
-	children: PropTypes.string.isRequired,
+  children: PropTypes.string.isRequired,
 }
 
 const ExerciseContainer = styled.div`
@@ -71,12 +71,12 @@ const ExerciseContainer = styled.div`
 `
 
 const ExerciseTitle = styled.div`
-	font-size: 1.5rem;
-	color: ${p => p.theme.colors.exercise};
-	margin-bottom: 1rem;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: ${p => p.theme.colors.borderColor};
+  font-size: 1.5rem;
+  color: ${p => p.theme.colors.exercise};
+  margin-bottom: 1rem;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: ${p => p.theme.colors.borderColor};
 `
 
 const NoteContainer = styled.div`
@@ -94,17 +94,17 @@ const NoteContainer = styled.div`
 `
 
 const NoteTitle = styled.div`
-	font-size: 1.2rem;
-	color: ${p => p.theme.colors.primary};
-	margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: ${p => p.theme.colors.primary};
+  margin-bottom: 1rem;
 `
 
 const InfoHeader = styled.h4`
-	margin: 0px !important;
-	color: ${p => p.theme.colors.exercise};
-	&:hover,
-	&:focus,
-	&.is-active {
-		color: ${p => p.theme.colors.primary};
-	}
+  margin: 0px !important;
+  color: ${p => p.theme.colors.exercise};
+  &:hover,
+  &:focus,
+  &.is-active {
+    color: ${p => p.theme.colors.primary};
+  }
 `
