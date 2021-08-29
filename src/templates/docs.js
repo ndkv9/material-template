@@ -7,12 +7,13 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { MDXProvider } from '@mdx-js/react'
 import { Exercise, Note } from '../components/UIComponents'
+import { Link } from 'gatsby'
 import { Image, AspectImage, Embed } from 'theme-ui'
 
 const DocsTemplate = ({ data, location }) => {
   const { mdx } = data
 
-  const shortcodes = { Image, AspectImage, Embed, Exercise, Note }
+  const shortcodes = { Image, AspectImage, Embed, Exercise, Note, Link }
 
   return (
     <Layout tableOfContents={mdx.tableOfContents} location={location}>

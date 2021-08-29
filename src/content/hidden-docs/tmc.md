@@ -1,7 +1,7 @@
 ---
 title: 'TMC Instructions'
 nav_order: 504
-hidden: false
+hidden: true
 ---
 
 # Prerequisits for the course
