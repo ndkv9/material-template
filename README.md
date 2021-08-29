@@ -142,9 +142,9 @@ In the ***./src/content***, you will find a ***hidden-docs*** folder. This will 
 
 ![Hidden Content](https://i.imgur.com/wFpgBTm.png)
 
-To access to a hidden file in a Markdown document you can add a Link component <Link to='/hidden-docs/<name of hidden file>'>hidden file</Link>, for example, if you want to access to tmc file in the hidden folder, you can add a Link component as below
+To access to a hidden file in a Markdown document you can add a Link component "<Link to='/hidden-docs/<name of hidden file>'>hidden file</Link>", for example, if you want to access to tmc file in the hidden folder, you can add a Link component as below
 
-<Link to='/hidden-docs/tmc'>TMC</Link>
+"<Link to='/hidden-docs/tmc'>TMC</Link>"
 
 ### About License
 
