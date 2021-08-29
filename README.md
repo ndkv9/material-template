@@ -39,6 +39,7 @@
       <ul>
         <li><a href="#config-to-deploy-the-application-on-github-pages">Config to deploy the application on Github Pages</a></li>
         <li><a href="#replace-document-content">Replace document content</a></li>
+        <li><a href="#types-of-content">Types of content</a></li>
         <li><a href="#about-hidden-content">About hidden content</a></li>
         <li><a href="#about-license">About license</a></li>
         <li><a href="#update-repositories-created-by-the-template">Update repositories created by the template</a></li>
@@ -132,11 +133,19 @@ You also can watch [this tutorial](https://www.youtube.com/watch?v=JIMord7-G10) 
 
 To replace document content, you need to delete the content folder in **./src** folder then replace your own document content folder.
 
+### Types of content
+
+At the moment, the template offers two types of content. The first one is created by the **template** file, these papges will have the same layout with the main content taken from markdown files in the **content** folder. Most pages of this template belong to this type. The second one, is the pages create by setup a new file in **pages** folder. This type of content will have different layouts (or behaviors) compare to the first one depends on the purpose of the developers. At this stage, 404 is the only one page belongs to this type.
+
 ### About hidden content
 
 In the ***./src/content***, you will find a ***hidden-docs*** folder. This will be the folder contains all of the content that you want them to be hidden likes LICENSE, exercise instructions or exercise solutions. To turn a Markdown file into a hidden file, you just need to set the hidden field in its front matter to be ***true*** as below
 
 ![Hidden Content](https://i.imgur.com/wFpgBTm.png)
+
+To access to a hidden file in a Markdown document you can add a Link component, for example, if you want to access to tmc file in the hidden folder, you can add a Link component as below
+
+![Link Component](https://i.imgur.com/gKWOSj9.png)
 
 ### About License
 
