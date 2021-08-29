@@ -39,6 +39,7 @@
       <ul>
         <li><a href="#config-to-deploy-the-application-on-github-pages">Config to deploy the application on Github Pages</a></li>
         <li><a href="#replace-document-content">Replace document content</a></li>
+        <li><a href="#types-of-content">Types of content</a></li>
         <li><a href="#about-hidden-content">About hidden content</a></li>
         <li><a href="#about-license">About license</a></li>
         <li><a href="#update-repositories-created-by-the-template">Update repositories created by the template</a></li>
@@ -142,9 +143,9 @@ In the ***./src/content***, you will find a ***hidden-docs*** folder. This will 
 
 ![Hidden Content](https://i.imgur.com/wFpgBTm.png)
 
-To access to a hidden file in a Markdown document you can add a Link component "<Link to='/hidden-docs/<name of hidden file>'>hidden file</Link>", for example, if you want to access to tmc file in the hidden folder, you can add a Link component as below
+To access to a hidden file in a Markdown document you can add a Link component, for example, if you want to access to tmc file in the hidden folder, you can add a Link component as below
 
-"<Link to='/hidden-docs/tmc'>TMC</Link>"
+![Link Component](https://i.imgur.com/iDXMS66.png)
 
 ### About License
 
