@@ -4,10 +4,6 @@ nav_order: 500
 hidden: true
 ---
 
-Wise man said just raise your hand
+Submit your solution to be checked on the server in Visual Studio Code: <Link style={{color: "#ef5b5b"}} to='/hidden-docs/tmc'>Exercise submission instructions</Link>
 
-And reach out for the spell
-
-Find the door to the promised land
-
-Just believe in yourself
+You can see your submissions in the <a href="https://tmc.mooc.fi/" target="_blank">Test My Code exercise submission environment, here</a>.

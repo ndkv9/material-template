@@ -29,7 +29,7 @@ export const Exercise = ({ title, children }) => {
       <ExerciseTitle>{title}</ExerciseTitle>
       {children}
       <ExtraInfo title={'Submission Instructions'} />
-      <ExtraInfo title={'Hints'} />
+      <ExtraInfo title={'How to see the solution'} />
     </ExerciseContainer>
   )
 }

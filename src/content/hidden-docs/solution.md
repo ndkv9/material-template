@@ -1,13 +1,7 @@
 ---
-title: 'Hints'
+title: 'How to see the solution'
 nav_order: 502
 hidden: true
 ---
 
-Wise man said just find your place
-
-In the eye of the storm
-
-Seek the roses along the way
-
-Just beware of the thorns
+You can see the solution in the Test My Code -service in TMC website after completing the exercise.
